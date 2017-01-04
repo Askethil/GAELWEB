@@ -32,6 +32,26 @@ class DefaultController extends MasterController {
                         )
         );
     }
-
+       public function BoutiqueAction() {
+        $boutiques = $this->getDoctrine()
+                ->getManager()
+                ->getRepository('GaelBundle:Boutiques')
+                ->findAll();
+        return $this->render(
+                        'GaelBundle:boutique:boutiques.html.twig', array('boutiques' => $boutiques,
+                        )
+        );
+    }
+    
+ public function articlesBoutiqueAction($idBout) {
+        $articles = $this->getDoctrine()
+                ->getManager()
+                ->getRepository('GaelBundle:Articles')
+                ->findByIdboutique($idBout);
+        return $this->render(
+                        'GaelBundle:boutique:articles.html.twig', array('articles' => $articles,
+                        )
+        );
+    }
  
 }

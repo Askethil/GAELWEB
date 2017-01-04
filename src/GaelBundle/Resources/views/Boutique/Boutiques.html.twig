@@ -1,0 +1,26 @@
+{# empty Twig template #}
+{% block head %}
+    <link href="{{asset ('css/article.css')}}" rel="stylesheet" type="text/css"/>
+
+{% endblock %}
+{% extends 'GaelBundle:Templates:Template.html.twig'%}
+{% block article %}
+    <div id="contenu">
+        <div id="content">
+            <div id="works">
+                {% for a in boutiques %}   
+                    <a id="robe-" rel="diaporama_group" alt='test' title='' href="{{path('articlesBoutique',{idBout:a.Idboutique})}}">
+                        <div class="work">
+                            <img alt="diapo-exemple" src="{{asset('images/'~a.urlImage)}}"  width="212" height="300" alt>
+                            <span> 
+                                <div id="titre">{{a.lib}}</div>
+
+                                <div id="prix">{{a.description}}</div>  
+                            </span>    
+                        </div>
+                    </a><!-- .work -->
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

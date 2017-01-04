@@ -7,3 +7,9 @@ articles:
 detailArticle:        
     path:     /detailArticle/{idArt}
     defaults: { _controller: GaelBundle:Default:detailArticle}
+boutique:        
+    path:     /boutique
+    defaults: { _controller: GaelBundle:Default:boutique}
+articlesBoutique:        
+    path:     /articlesBoutique/{idBout}
+    defaults: { _controller: GaelBundle:Default:articlesBoutique}
