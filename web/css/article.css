@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+a images {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #6E052E;
+}
+
+#content {
+
+
+    color :#FFF;
+
+    text-align: justify;
+}
+
+/* Contient le header avec un background noir transparent */
+
+/* #works contient tous les travaux, le margin-top est élevé pour ne pas apparaitre sous le menu flottant */
+
+#works .work {
+    /* Voici le overflow:hidden qui permet de cacher les triangles et de ne les voir apparaitre que lorsqu'ils sont dedans la div */
+    overflow: hidden;
+    width:212px;
+    height: 300px;
+    border: 4px solid #3473a9;
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    -moz-transition: all .6s; 
+    -webkit-transition: all .5s; 
+    -o-transition: all .6s; 
+    transition: all .6s;
+    float: left;
+    margin-right: 20px;
+
+}
+
+#works .work:hover {
+    border: 4px solid #FFF;
+}
+#works .work span {
+    width: 100%;
+    height: 75px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12px;
+
+    position: absolute;
+    top: 230px;
+    left: -280px;
+
+   background: #3473a9;
+    padding-left: 10px;
+    padding-right: 8px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+#prix {
+    text-align:right;
+    font-family: 'Din', "Trebuchet MS";
+    font-size: 135%;
+    margin-top:15px;}
+
+#works .work:hover span {
+    /* Voici la position du span lorsqu'on est en :hover */
+    left: 0px;
+}
+
+/*//////// FONTS /////////*/
+
+@font-face{
+    font-family: "Din";
+    src: url("../fonts/din-webfont.eot");
+    src: local("@"),url("../fonts/din-webfont.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Din-medium";
+    src: url("../fonts/din_medium-webfont.eot");
+    src: local("@"),url("../fonts/din_medium-webfont.ttf") format("truetype");
+}
+#fancybox-title-over {
+
+    width:95%}
+
+#Article{
+    width: 100px;
+    float: left;
+    height: 100px;
+    margin-left: 50px;
+    margin-right:50px;}
+
+#fancybox-wrap{
+    margin-left:-15%;}
+
+
+#contenu{
+    width: 960px;
+    /* height: 1000px; */
+    margin-left: auto;
+    margin-right: auto;}
+
+
+
+#titre{
+    font-family: 'Din', "Trebuchet MS";
+    font-size: 115%;}
+#titreZ{
+
+    color: black;
+    font-family: "Museo Slab";
+    font-size: 20px;
+
+    color: #3E3E3E;
+    font-weight: bold;
+}
+#sous-titreZ{
+    color: black;
+    font-size: 18px;
+    font-family: "Museo Slab";
+    margin-top: 5px;
+}
+#detail{
+    font-family: "Museo Slab";
+    font-size: 15px;
+    color: #3E3E3E;
+    margin-top: 35px;
+}
+#prixz{
+
+    position: absolute;
+    height: 50px;
+    background-color: #AB3172;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3%;
+    font-family: 'Din', "Trebuchet MS";
+    font-size: 135%;
+    width: 89%;
+    margin-left: 98%;
+
+}
+#tableclic{
+    position: inherit;
+    margin-left: 100%;
+    width: 85%;
+    margin-top: -120%;}
+#prixz .prix{
+
+
+}
+#menuActicle{
+    width: 1000px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;}
+#Article{
+    width: 200px;
+    float: left;
+    height: 200px;
+    margin-left: 25px;
+    margin-right: 25px;}
+#imageMenu{
+    border-radius: 25px;}
+#images{
+    position: absolute;   
+    text-align: center;  
+    margin-top: -45%;
+    width: 89%;
+    margin-left: 98%;}
+#image1, #image2, #image3{
+    height: 140px;
+    width: 33%;
+    display: inline-block;}
+#image1 img, #image2 img, #image3 img{
+
+    width: 100%;
+}

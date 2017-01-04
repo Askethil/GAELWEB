@@ -1,0 +1,9 @@
+gael_homepage:
+    path:     /
+    defaults: { _controller: GaelBundle:Default:index }
+articles:        
+    path:     /articles
+    defaults: { _controller: GaelBundle:Default:articles}
+detailArticle:        
+    path:     /detailArticle/{idArt}
+    defaults: { _controller: GaelBundle:Default:detailArticle}

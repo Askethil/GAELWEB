@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#menuActicle{
+    width: 1000px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;}
+#Article{
+    margin-top: 25px;
+    width: 200px;
+    float: left;
+    height: 200px;
+    margin-left: 25px;
+    margin-right: 25px;}
+#imageMenu{
+    border-radius: 50%;
+    border: 3px solid #AB3172;}
+#imageMenu:hover {
+    border: 3px solid #FFF;
+    opacity: 0.7;
+}
+#titreArticle{
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: #565656;;
+    font-weight: bold;
+}

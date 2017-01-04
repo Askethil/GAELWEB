@@ -1,0 +1,48 @@
+{# empty Twig template #}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}
+            Fancy
+            {% endblock %}
+            </title>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+            <link href="{{asset ('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
+            <link href="{{asset ('css/footer.css')}}" rel="stylesheet" type="text/css"/>
+            <script src="{{asset ('js/bootstrap.min.js')}}" type="text/javascript"></script>
+                        {% block head %}
+                            
+                        {% endblock %}
+        </head>
+        <body>
+            {% include 'GaelBundle:Menu:navbar.html.twig' %}
+            <div class="container">
+                <div class="row">
+                    <aside class="col-md-0">
+                        {% block news %}
+
+                        {% endblock %}
+                    </aside>
+                    <article class="col-md-12">
+                        {% block article %}
+                            
+                        {% endblock %}
+                    </article>
+                    <aside class="col-md-0">
+                        {% block news2 %}
+
+                        {% endblock %}
+                    </aside>
+
+                </div>
+
+        
+            </div>
+                            <footer>
+                    {% block foot %}
+                  
+  {% include 'GaelBundle:Footer:footer.html.twig' %}
+                    {% endblock %}
+                </footer>
+        </body>
+    </html>

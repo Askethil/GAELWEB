@@ -1,0 +1,4 @@
+services:
+#    gael.example:
+#        class: GaelBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

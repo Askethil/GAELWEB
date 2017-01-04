@@ -1,0 +1,42 @@
+{# empty Twig template #}
+{% block head %}
+    <link href="{{asset ('css/detailArticle.css')}}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="{{asset ('js/fonctionsJs.js')}}"></script>
+{% endblock %}
+{% extends 'GaelBundle:Templates:Template.html.twig'%}
+{% block article %}
+    <div id="page" class="thumbnail col-sm-6 col-md-12" >          
+        <div id="titre"> <h3>{{article.lib}}</h3>   </div>
+        <div class="row" id="BlocImages">
+            <article class="col-sm-4">
+                <img class="img-responsive"  alt="Gael" id="imagePrincipal" src="{{asset('images/'~article.urlImage)}}" alt>
+            </article>
+      
+            <div class="row">
+                <div class="col-sm-1" id="separation">    </div>
+                <div id="BockDescription" class="col-sm-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo leo, feugiat in quam non, convallis facilisis leo. Nullam venenatis purus ante, sit amet ultrices orci auctor dapibus. Duis at mi vehicula, dapibus augue sed, tempus enim. Maecenas pulvinar libero et porta blandit. Quisque libero tellus, malesuada quis eros vel, luctus condimentum purus. Proin quis libero viverra, efficitur felis nec, imperdiet nunc. Curabitur lobortis dui quis elit venenatis dictum. Mauris luctus, nulla id scelerisque bibendum, velit metus finibus nulla, volutpat varius neque odio sed odio. Morbi et sapien diam. Vivamus eget ante lorem. Integer eu lobortis tortor, non volutpat risus. Quisque sed eros quis dui porta vulputate bibendum id mi.
+
+                    Phasellus porttitor sed lectus in dictum. Pellentesque lectus dui, vehicula eget iaculis sit amet, posuere accumsan arcu. Etiam bibendum, mauris eget pharetra venenatis, lacus felis vehicula nibh, eget sodales purus metus nec libero. Aliquam vel dui et sapien efficitur aliquet eget iaculis massa. Vestibulum bibendum tincidunt risus nec auctor. Duis ullamcorper mauris a consectetur viverra. Sed semper magna sapien. Vivamus eget rhoncus leo. Vestibulum rutrum faucibus turpis, ac dapibus nunc fringilla nec. Aenean vel massa urna.
+
+                    Morbi sit amet maximus magna, eu semper ipsum. Suspendisse tincidunt suscipit arcu, blandit rhoncus erat dictum quis. Etiam elementum vitae libero sed convallis. Curabitur vel diam tristique, vestibulum sapien vel, venenatis risus. Nulla facilisi. Ut mollis non augue sit amet pretium. Morbi at nunc quis enim lacinia interdum eu sodales ipsum. Cras sit amet imperdiet magna. Fusce eget vehicula lectus. Donec at pharetra risus. Maecenas venenatis vulputate purus, sed porta massa condimentum non. Aliquam pharetra nulla malesuada mauris auctor condimentum. Morbi a finibus mauris.
+
+                    Donec sed faucibus ligula. Nam ultricies ornare sapien. Etiam diam mauris, lobortis a arcu id, sagittis ullamcorper massa. Nunc venenatis mollis magna id scelerisque. Etiam sit amet ex congue, scelerisque est at, vehicula elit. Donec fermentum ullamcorper lacus nec convallis. Morbi condimentum turpis vel nulla laoreet, ut tincidunt elit porttitor. Vestibulum ut consequat nisi. Vestibulum rutrum tristique nibh at molestie.
+
+                    Pellentesque sit amet felis eros. Ut a elit eu sapien porttitor iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean condimentum viverra turpis, a ultricies mi ornare in. Nam gravida libero dui, at facilisis metus rutrum non. Ut sit amet gravida purus. Cras finibus egestas enim, ac pellentesque quam vulputate et. Aliquam ultricies ac dui iaculis ultricies. Nullam sit amet consequat tortor, quis auctor turpis. Cras nec augue condimentum, iaculis erat a, fermentum odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec nibh massa. Morbi elementum lectus vel augue iaculis, sit amet volutpat sapien sodales. Sed et ipsum nibh.
+
+                    Phasellus lacinia est quis velit consequat, in commodo enim rutrum. Proin pretium dolor nec tellus blandit, in congue turpis rhoncus. Suspendisse potenti. Nulla eget imperdiet justo. Nullam sed sapien vitae orci elementum lacinia id blandit lorem. Nam suscipit felis vehicula, facilisis felis vel, dignissim tortor. Donec sed finibus est. Maecenas ut interdum libero. Nam porttitor, ex sit amet semper dignissim, erat nisi placerat tellus, eu lacinia eros sapien a nunc. Vestibulum scelerisque congue fermentum. Fusce tincidunt eleifend velit, nec dapibus est euismod ac. Donec in lacinia quam.
+
+                    Proin molestie libero sit amet justo varius, ut convallis sapien blandit. Praesent venenatis quam id nulla venenatis, at imperdiet justo euismod. Etiam maximus tellus nec enim luctus semper. Aliquam blandit ligula eu efficitur vulputate. Donec scelerisque elit interdum purus efficitur, nec pharetra risus lacinia. Donec nec ex vitae augue imperdiet rhoncus vitae iaculis elit. Vivamus faucibus dapibus ligula, sit amet dapibus lacus cursus non. Donec scelerisque ornare luctus. Phasellus vestibulum libero augue. Ut posuere mattis volutpat. Fusce facilisis molestie est ac rhoncus. Nam aliquet ligula id lacus semper, nec efficitur nulla tincidunt. Quisque fermentum dapibus fringilla. Donec pretium lorem vitae dui suscipit posuere.               </div>
+            </div> 
+
+        </div>  
+    </div>
+
+
+
+
+
+
+
+{% endblock %}
